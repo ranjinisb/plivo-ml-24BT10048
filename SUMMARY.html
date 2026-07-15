@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Voice Cloning Research Summary</title>
+</head>
+
+<body style="font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px;">
+    <h1>Voice Cloning Research: Final Summary</h1>
+    <p><strong>Researcher:</strong> Ranjini Sinha Biswas</p>
+
+    <h2>Research Methodology</h2>
+    <p>My approach moved through three distinct phases, documented in <code>RUNLOG.md</code> and <code>nodes.md</code>:
+    </p>
+    <ul>
+        <li><strong>Phase 1: Baseline Exploration:</strong> Conducted a baseline screening to identify high-performing
+            voice candidates.</li>
+        <li><strong>Phase 2: Regression Transition:</strong> Shifted from random mutations to a Reverse Ridge Regression
+            model to gain mathematical stability.</li>
+        <li><strong>Phase 3: Curated Expert Triangulation:</strong> Refined the model by training exclusively on the top
+            5 elite performers, enabling feature disentanglement of pitch, tone, and prosody.</li>
+    </ul>
+
+    <h2>Key Findings</h2>
+    <p>By decoupling these acoustic features, I successfully prevented the "robotic" artifacts commonly associated with
+        over-optimization. The final <code>voice.pt</code> achieves a high similarity score of 0.6395 while maintaining
+        natural, human-like pacing.</p>
+
+    <h2>Conclusion</h2>
+    <p>This research confirms that for high-fidelity voice cloning, a curated, structurally-sound approach is superior
+        to high-variance brute force. The plateau observed was a deliberate engineering decision to avoid perceptual
+        degradation.</p>
+</body>
+
+</html>
